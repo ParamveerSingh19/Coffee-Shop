@@ -67,6 +67,9 @@ img {
 
 /* Navbar Styling */
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
   background: var(--primary-color);
 }
 
@@ -112,4 +115,10 @@ header .navbar {
   min-height: 100vh;
   color: var(--white-color);
   justify-content: space-between;
+}
+
+.hero-section .hero-details .title {
+  font-size: var(--font-size-xxl);
+  color: var(--secondary-color);
+  font-family: "Miniver", sans-serif;
 }
