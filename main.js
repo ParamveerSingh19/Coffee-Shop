@@ -6,7 +6,5 @@ menuOpenButton.addEventListener("click", () => {
   document.body.classList.toggle("show-menu");
 });
 
-menuCloseButton.addEventListener("click", () => {
-  // Toggle the class to hide the menu
-  document.body.classList.toggle("close-menu");
-});
+// Toggle the class to hide the menu
+menuCloseButton.addEventListener("click", () => menuOpenButton.click());
