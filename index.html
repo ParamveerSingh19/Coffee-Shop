@@ -9,6 +9,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <!-- Linking Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -27,16 +32,16 @@
             <a href="#" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Menu</a>
+            <a href="#" class="nav-link">Taste Book</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Gallery</a>
+            <a href="#" class="nav-link">The Spread</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+            <a href="#" class="nav-link">Reach Out</a>
           </li>
         </ul>
 
@@ -100,9 +105,9 @@
         </div>
       </section>
 
-      <!-- Menu Section -->
+      <!-- Taste Book Section -->
       <section class="menu-section">
-        <h2 class="section-title">Curated Offerings</h2>
+        <h2 class="section-title">Taste Book</h2>
         <div class="section-content">
           <ul class="menu-list">
             <li class="menu-item">
@@ -171,8 +176,118 @@
           </ul>
         </div>
       </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials-section">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
+                  <img src="Images/user-1.png" alt="User" class="user-image" />
+                  <h3 class="name">Aarav Malhotra</h3>
+                  <i class="feedback"
+                    >“Bold flavors and crispy layers this combo was pure
+                    indulgence.”</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="Images/user-2.png" alt="User" class="user-image" />
+                  <h3 class="name">Devansh Suri</h3>
+                  <i class="feedback"
+                    >“CaféLoom blends tradition and finesse into every sip.”</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="Images/user-3.png" alt="User" class="user-image" />
+                  <h3 class="name">Ananya Kayastha</h3>
+                  <i class="feedback"
+                    >“Each dessert is a celebration rich, delicate, and
+                    divine.”</i
+                  >
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="Images/user-4.png" alt="User" class="user-image" />
+                  <h3 class="name">Harvinder Singh Grewal</h3>
+                  <i class="feedback"
+                    >“Quiet luxury in every detail, from espresso to ambiance.”
+                  </i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="Images/user-5.png" alt="User" class="user-image" />
+                  <h3 class="name">Meher Khurana</h3>
+                  <i class="feedback"
+                    >“A calm pocket in Delhi's buzz where comfort meets
+                    craft.”</i
+                  >
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Spread Section -->
+      <section class="gallery-section">
+        <h2 class="section-title">The Spread</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img
+                src="Images/gallery-1.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="Images/gallery-2.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="Images/gallery-3.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="Images/gallery-4.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="Images/gallery-5.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+            <li class="gallery-item">
+              <img
+                src="Images/gallery-6.png"
+                alt="Gallery"
+                class="gallery-image"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
+    <!-- Linking Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking Main Script -->
     <script src="main.js"></script>
   </body>
 </html>
