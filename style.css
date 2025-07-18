@@ -320,7 +320,7 @@ header .navbar {
   align-items: center;
   text-align: center;
   height: 100%;
-  border: 6px solid var(--secondary-color);
+  border: 5px solid var(--secondary-color);
 }
 
 .menu-section .menu-item:hover {
@@ -369,7 +369,7 @@ header .navbar {
 .menu-section .price {
   font-size: var(--font-size-m);
   font-weight: var(--font-weight-semibold);
-  color: var(--secondary-color);
+  color: #009873;
   margin-top: auto;
 }
 
