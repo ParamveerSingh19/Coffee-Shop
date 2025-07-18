@@ -1,3 +1,4 @@
+const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton = document.querySelector("#menu-open-button");
 const menuCloseButton = document.querySelector("#menu-close-button");
 
@@ -8,6 +9,11 @@ menuOpenButton.addEventListener("click", () => {
 
 // Toggle the class to hide the menu
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+
+// Close the menu when a nav link is clicked
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => menuOpenButton.click());
+});
 
 // Initialize Swiper
 const swiper = new Swiper(".slider-wrapper", {
