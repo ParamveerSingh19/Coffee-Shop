@@ -1,6 +1,8 @@
-☕ CaféLoom - Your Finest Brews
+#☕ CaféLoom - Your Finest Brews
+
 Welcome to CaféLoom, a modern and fully responsive coffee shop website built with HTML, CSS, and JavaScript. This project is designed to offer a delightful online presence for a coffee shop, providing a seamless user experience across all devices.
 
+---
 ✨ Features
 Modern UI/UX Design: Clean, elegant, and user-friendly interface.
 
