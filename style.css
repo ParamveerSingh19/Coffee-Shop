@@ -17,7 +17,7 @@
   --light-pink-color: #faf4f5;
   --medium-gray-color: #ccc;
   --border-color-light: #e0e0e0;
-  --border-color-darker: #a0a0a0; /* New variable for a more visible border */
+  --border-color-darker: #a0a0a0;
 
   /* Font Size - Using fluid clamp() for better responsiveness */
   /* clamp(min, preferred, max) */
@@ -149,7 +149,6 @@ header .navbar {
   color: var(--white-color);
   justify-content: space-between;
   flex-wrap: wrap;
-  /* UPDATED: Increased padding-top to account for fixed header height */
   padding-top: clamp(80px, 15vw, 120px);
   padding-bottom: clamp(60px, 10vw, 80px);
 }
@@ -231,26 +230,22 @@ header .navbar {
 }
 
 .about-section .about-image-wrapper {
-  flex: 0 0 clamp(250px, 40vw, 400px); /* Changed flex-basis to control overall size */
-  width: clamp(250px, 40vw, 400px); /* Explicit width */
-  height: clamp(250px, 40vw, 400px); /* Explicit height, same as width */
+  flex: 0 0 clamp(250px, 40vw, 400px);
+  width: clamp(250px, 40vw, 400px);
+  height: clamp(250px, 40vw, 400px);
   display: flex;
   justify-content: center;
-  align-items: center; /* Center the image within its wrapper if needed */
-  overflow: hidden; /* Crucial: Ensures the image doesn't break out of its container */
-  border-radius: var(
-    --border-radius-circle
-  ); /* Apply border-radius to the wrapper */
-  position: relative; /* For image positioning if needed */
+  align-items: center;
+  overflow: hidden;
+  border-radius: var(--border-radius-circle);
+  position: relative;
 }
 
 .about-section .about-image-wrapper .about-image {
-  width: 100%; /* Image takes full width of its square wrapper */
-  height: 100%; /* Image takes full height of its square wrapper */
-  object-fit: cover; /* Important: Ensures image covers the circle without distortion */
-  /* border-radius is moved to the wrapper for consistency, but also good here for double check */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: var(--border-radius-circle);
-  /* Removed aspect-ratio from image, as wrapper now defines the square */
 }
 
 .about-section .about-details {
@@ -351,7 +346,7 @@ header .navbar {
   flex-grow: 1;
   justify-content: flex-start;
   min-height: clamp(120px, 15vw, 160px);
-  margin-bottom: clamp(8px, 2.5vw, 12px); /* Reverted to original */
+  margin-bottom: clamp(8px, 2.5vw, 12px);
 }
 
 .menu-section .name {
@@ -368,7 +363,6 @@ header .navbar {
   font-size: var(--font-size-m);
   color: #5c4a45;
   line-height: 1.5;
-  /* ADDED: Margin-bottom for spacing between description and price */
   margin-bottom: clamp(10px, 2.5vw, 15px);
 }
 
@@ -557,7 +551,7 @@ header .navbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center; /* Center the overall group of items */
+  justify-content: center;
   gap: clamp(10px, 3vw, 20px);
 }
 
@@ -568,14 +562,14 @@ header .navbar {
 }
 
 .footer-section .copyright-text {
-  margin-right: auto; /* Pushes itself and the social links to the right */
+  margin-right: auto;
 }
 
 .footer-section .social-link-list {
   display: flex;
   gap: clamp(15px, 4vw, 25px);
   flex-wrap: wrap;
-  justify-content: center; /* Ensures icons are centered if they wrap */
+  justify-content: center;
 }
 
 .footer-section .social-link-list .social-link {
@@ -588,8 +582,8 @@ header .navbar {
 }
 
 .footer-section .policy-text {
-  margin-left: auto; /* Pushes itself to the right */
-  order: 3; /* Keeps it at the end on smaller screens */
+  margin-left: auto;
+  order: 3;
 }
 
 .footer-section .policy-text .separator {
@@ -651,13 +645,16 @@ header .navbar {
     font-size: var(--font-size-l);
   }
 
+  .hero-section {
+    padding-top: 20px;
+  }
+
   .hero-section .section-content {
     flex-direction: column-reverse;
     justify-content: center;
     gap: clamp(30px, 8vw, 50px);
     text-align: center;
     padding: clamp(20px, 5vw, 30px) clamp(10px, 4vw, 20px);
-    /* Re-adjust padding-top for mobile if needed, but it should be handled by the clamp */
     padding-top: clamp(80px, 15vw, 120px);
   }
 
@@ -681,16 +678,14 @@ header .navbar {
   }
 
   .about-section .about-image-wrapper {
-    /* Adjustments for mobile: */
-    width: clamp(200px, 50vw, 250px); /* Smaller size for mobile */
-    height: clamp(200px, 50vw, 250px); /* Keep height equal to width */
-    flex-basis: auto; /* Allow flex to size it within constraints */
+    width: clamp(200px, 50vw, 250px);
+    height: clamp(200px, 50vw, 250px);
+    flex-basis: auto;
   }
 
   .about-section .about-image-wrapper .about-image {
     width: 100%;
     height: 100%;
-    /* No max-width or max-height needed here, as parent handles it now */
   }
 
   .menu-section .menu-list .menu-item .menu-image {
@@ -716,21 +711,21 @@ header .navbar {
     margin: 0 0 clamp(20px, 5vw, 30px);
   }
   .footer-section .section-content {
-    flex-direction: column; /* Stack footer items on very small screens */
+    flex-direction: column;
     gap: clamp(10px, 3vw, 20px);
   }
   .footer-section .copyright-text {
-    margin-right: unset; /* Remove auto margins when stacked */
+    margin-right: unset;
     text-align: center;
   }
   .footer-section .social-link-list,
   .footer-section .policy-text {
     width: 100%;
     text-align: center;
-    justify-content: center; /* For social links */
-    margin-left: unset; /* Remove auto margins when stacked */
+    justify-content: center;
+    margin-left: unset;
   }
   .footer-section .social-link-list {
-    order: 2; 
+    order: 2;
   }
 }

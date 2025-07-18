@@ -1,6 +1,8 @@
-☕ CaféLoom - Your Finest Brews
+# ☕ CaféLoom - Your Finest Brews
+
 Welcome to CaféLoom, a modern and fully responsive coffee shop website built with HTML, CSS, and JavaScript. This project is designed to offer a delightful online presence for a coffee shop, providing a seamless user experience across all devices.
 
+---
 ✨ Features
 Modern UI/UX Design: Clean, elegant, and user-friendly interface.
 
@@ -84,9 +86,9 @@ Push to the Branch (git push origin feature/AmazingFeature)
 
 Open a Pull Request
 
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
-
 ✍️ Author
 Paramveer Singh
 Project Link: https://github.com/ParamveerSingh19/Coffee-Shop
+
+📄 License
+Distributed under the MIT License. See LICENSE for more information.
