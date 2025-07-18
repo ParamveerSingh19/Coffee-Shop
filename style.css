@@ -133,6 +133,7 @@ header .navbar {
 .hero-section {
   min-height: 100vh;
   background: var(--primary-color);
+  padding-top: 80px;
 }
 
 .hero-section .section-content {
@@ -541,6 +542,10 @@ header .navbar {
     margin-top: 17px;
 
     font-size: var(--font-size-l);
+  }
+  
+  .hero-section {
+    padding-top: 90px;
   }
 
   .hero-section .section-content {
