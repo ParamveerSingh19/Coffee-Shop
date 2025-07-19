@@ -90,6 +90,119 @@ img {
   border-radius: var(--border-radius-s);
 }
 
+/* Splash Screen Styling */
+.splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 0%,
+    var(--dark-color) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  transition: opacity 0.7s ease-out, visibility 0.7s ease-out;
+  opacity: 1;
+  visibility: visible;
+  overflow: hidden;
+}
+
+.splash-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: clamp(20px, 5vw, 40px);
+  transform: translateY(0);
+  animation: splashContentRise 1s ease-out forwards;
+  max-width: 90%;
+}
+
+.splash-image {
+  width: clamp(150px, 25vw, 300px);
+  height: auto;
+  margin-bottom: clamp(20px, 4vw, 40px);
+  animation: splashImagePop 1s ease-out forwards;
+}
+
+.welcome-text {
+  color: var(--white-color);
+  font-size: clamp(1.2rem, 3.5vw, 2.5rem);
+  font-family: "Miniver", sans-serif;
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 0.8em;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in 0.5s forwards;
+  line-height: 1.4;
+  max-width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.splash-logo-text {
+  color: var(--secondary-color);
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--font-weight-bold);
+  white-space: nowrap;
+  letter-spacing: 3px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in 0.8s forwards;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4), 2px 2px 2px rgba(0, 0, 0, 0.35),
+    3px 3px 3px rgba(0, 0, 0, 0.3), 4px 4px 4px rgba(0, 0, 0, 0.25),
+    5px 5px 5px rgba(0, 0, 0, 0.2), 6px 6px 6px rgba(0, 0, 0, 0.15),
+    7px 7px 7px rgba(0, 0, 0, 0.1), 8px 8px 8px rgba(0, 0, 0, 0.05);
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: unset;
+  background-clip: unset;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes splashContentRise {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes splashImagePop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 /* Navbar Styling */
 header {
   position: fixed;
