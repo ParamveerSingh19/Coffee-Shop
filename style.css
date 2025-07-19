@@ -213,6 +213,7 @@ header .navbar {
   max-width: 500px;
   margin-right: clamp(0px, 3vw, 30px);
   min-width: 250px;
+  user-select: none;
 }
 
 /* About Section Styling */
@@ -239,6 +240,7 @@ header .navbar {
   overflow: hidden;
   border-radius: var(--border-radius-circle);
   position: relative;
+  user-select: none;
 }
 
 .about-section .about-image-wrapper .about-image {
@@ -337,6 +339,7 @@ header .navbar {
   display: flex;
   align-items: center;
   justify-content: center;
+  user-select: none;
 }
 
 .menu-section .details-wrapper {
@@ -461,6 +464,7 @@ header .navbar {
   cursor: zoom-in;
   transition: 0.3s ease;
   object-fit: cover;
+  user-select: none;
 }
 
 .gallery-section .gallery-item:hover .gallery-image {
