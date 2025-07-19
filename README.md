@@ -14,7 +14,7 @@ Hero Section: Engaging introduction to the coffee shop's essence.
 
 About Us Section: Details the cafe's story and mission.
 
-Taste Book (Menu) Section: Showcases a variety of beverages, desserts, and combos.
+Taste Book (Menu) Section: Card format showcases a variety of beverages, desserts, and combos.
 
 Testimonials Section: Features a dynamic slider powered by Swiper.js to display customer feedback.
 
