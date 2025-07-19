@@ -169,6 +169,7 @@ img {
   background-clip: unset;
 }
 
+/* Keyframes for Splash Screen */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -577,7 +578,8 @@ header .navbar {
   cursor: zoom-in;
   transition: 0.3s ease;
   object-fit: cover;
-  user-select: none;
+  user-select: none;  
+  border: 5px solid var(--light-pink-color);
 }
 
 .gallery-section .gallery-item:hover .gallery-image {
