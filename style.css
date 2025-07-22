@@ -787,7 +787,7 @@ header .navbar {
   }
 
   .hero-section .hero-image-wrapper {
-    max-width: clamp(200px, 0.25vw, 270px);
+    max-width: clamp(200px, 0, 270px);
     margin-right: 0;
   }
 
