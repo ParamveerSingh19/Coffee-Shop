@@ -87,8 +87,7 @@ Push to the Branch (git push origin feature/AmazingFeature)
 Open a Pull Request
 
 ✍️ Author
-Paramveer Singh
-Project Link: https://github.com/ParamveerSingh19/coffee-shop
+Made by [Paramveer Singh](https://github.com/ParamveerSingh19)
 
 📄 License
 Distributed under the MIT License. See LICENSE for more information.
