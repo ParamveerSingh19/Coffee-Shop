@@ -169,6 +169,7 @@ img {
   background-clip: unset;
 }
 
+/* Keyframes for Splash Screen */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -567,7 +568,8 @@ header .navbar {
 .gallery-section .gallery-list .gallery-item {
   flex: 1 1 clamp(280px, 28vw, 380px);
   min-width: clamp(250px, 80vw, 280px);
-  border-radius: var(--border-radius-s);
+  border-radius: var(--border-radius-s);  
+  border: 3px solid var(--light-pink-color);
   overflow: hidden;
 }
 
@@ -577,7 +579,7 @@ header .navbar {
   cursor: zoom-in;
   transition: 0.3s ease;
   object-fit: cover;
-  user-select: none;
+  user-select: none;  
 }
 
 .gallery-section .gallery-item:hover .gallery-image {
