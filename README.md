@@ -40,7 +40,7 @@ Google Fonts: For custom typography (Miniver, Poppins, Raleway).
 Swiper.js: A modern touch slider for the testimonials section.
 
 📁 Project Structure
-Coffee-Shop/
+coffee-shop/
 ├── Images/ # All project images
 ├── index.html # Main HTML file
 ├── style.css # Main CSS file
@@ -58,12 +58,12 @@ Clone the repository:
 
 Bash
 
-git clone https://github.com/ParamveerSingh19/Coffee-Shop.git
+git clone https://github.com/ParamveerSingh19/coffee-shop.git
 Navigate to the project directory:
 
 Bash
 
-cd Coffee-Shop
+cd coffee-shop
 Open index.html in your web browser:
 Simply double-click the index.html file, or open it via your browser's file menu.
 
@@ -88,7 +88,7 @@ Open a Pull Request
 
 ✍️ Author
 Paramveer Singh
-Project Link: https://github.com/ParamveerSingh19/Coffee-Shop
+Project Link: https://github.com/ParamveerSingh19/coffee-shop
 
 📄 License
 Distributed under the MIT License. See LICENSE for more information.
