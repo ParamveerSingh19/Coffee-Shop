@@ -90,4 +90,4 @@ Open a Pull Request
 Made by [Paramveer Singh](https://github.com/ParamveerSingh19)
 
 📄 License
-Distributed under the MIT License. See LICENSE for more information.
+This project is licensed under the [MIT License](LICENSE).
