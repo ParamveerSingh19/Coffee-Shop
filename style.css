@@ -259,12 +259,12 @@ header .navbar {
 .hero-section .section-content {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: auto;
   color: var(--white-color);
   justify-content: space-between;
   flex-wrap: wrap;
   padding-top: clamp(80px, 15vw, 120px);
-  padding-bottom: clamp(60px, 10vw, 80px);
+  padding-bottom: clamp(30px, 6vw, 50px);
 }
 
 .hero-section .hero-details {
@@ -775,6 +775,7 @@ header .navbar {
     text-align: center;
     padding: clamp(20px, 5vw, 30px) clamp(10px, 4vw, 20px);
     padding-top: clamp(80px, 15vw, 120px);
+    padding-bottom: 28px;
   }
 
   .hero-section .hero-details :is(.subtitle, .description),
